@@ -24,6 +24,7 @@ img{
 --accent-color: #2196F3;
 --secondary-header:#212121;
 --text-color: #757575;
+--icon-color:#AFB1B8;
 }
 
 .list{
@@ -35,6 +36,8 @@ margin: 0px;
 text-decoration: none;
 }
 .container{
+    
+
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -259,11 +262,17 @@ text-decoration: none;
     display: flex;
     justify-content: center;
 }
+.team-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 .team-item:not(:last-child){
     margin-right: 30px;
 
 }
 .team-list-position{
+    display: block;
+    width: 270px;
     padding: 30px 0;
     background-color: #FFFFFF;
 }
@@ -281,17 +290,88 @@ text-decoration: none;
 
 }
 .team-list-proffesion{
+        margin-bottom: 16px;
+
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         text-align: center;
         color: #757575;        
 }
+.networks-list{
+    display: flex;
+    max-width: 206px;
+    margin: 0 32px ;
+}
+.networks{
+    width: 44px;
+    justify-content: center;
+    height: 44px;
 
+
+}
+.team-networks:hover{
+background-color: var(--accent-color);
+fill: #FFFFFF;
+border-radius: 50%;
+
+}
+.networks:not(:last-child){
+    margin-right: 10px;
+}
+
+.team-networks{
+padding: 12px;
+fill: var(--icon-color);
+
+}
+
+/*------------------------regular-clients------------------- */
+.clients{
+        padding: 94px 0;
+}
+.clients-header{
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+}
+.clients-item{
+    padding: 16px 32px;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 1px;
+}
+.clients-item:hover{
+    
+    border: 1px solid var(--accent-color);
+    background: #FFFFFF;
+}
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
+.clients-icon{
+    fill: var(--icon-color);
+}
+.clients-icon:hover{
+    fill: var(--accent-color);
+}
 /*------------------------FOOTER------------------- */
 .footer{
     background-color:#2F303A;
     padding: 60px 0;
+}
+.container.footer-container {
+    display: flex;
 }
 .logo-footer{
         
@@ -309,6 +389,7 @@ text-decoration: none;
 }
 .footer-adress{
     font-style: normal;
+    width: 231px;
 }
 .adress{
 
@@ -333,8 +414,46 @@ text-decoration: none;
         color: rgba(255, 255, 255, 0.6);
 }
 
+/*------------------------footer-networks------------------- */
 
+.footer-networks{
+    width: 206px;
+    height: 80px;  
+    margin-left: 70px;
+    
+   
 
+}
+.footer-networks-header{
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+.footer-networks-list{
+    display: flex;
+}
+.networks-item{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    
+}
+.networks-item:not(:last-child){
+    margin-right: 10px;
+}
+.networks-icon{
+    fill: #FFFFFF;
+    padding: 12px;
+}
+.networks-icon:hover{
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
 /*------------------------PORTFOLIO------------------- */
 
 .products{
