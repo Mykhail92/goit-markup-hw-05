@@ -314,7 +314,8 @@ text-decoration: none;
 .team-networks {
     fill: currentColor;
 }
-.networks:hover{
+.networks:hover,
+.networks:focus{
 background-color: var(--accent-color);
 color:#F5F4FA;
 border-radius: 50%;
@@ -446,7 +447,7 @@ border-radius: 50%;
     display: flex;
      align-items: center;
 }
-.networks-item{
+.networks-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,9 +464,9 @@ border-radius: 50%;
 .networks-icon{
     fill: #FFFFFF;
 }
-.networks-item:hover{
+.networks-link:hover,
+.networks-link:focus{
     background-color: var(--accent-color);
-    /* border-radius: 50%;  */
 }
 
 /*------------------------PORTFOLIO------------------- */
