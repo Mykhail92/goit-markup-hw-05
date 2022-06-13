@@ -217,7 +217,7 @@ transition: background-color 2500ms var(--hover-time);
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
-    transition: transform 2500ms var(--hover-time);
+    transition: background-color 2500ms var(--hover-time);
      
 }
 .modal-svg{
